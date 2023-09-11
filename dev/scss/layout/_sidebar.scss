@@ -1,0 +1,40 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+@use "../abstracts/media-queries";
+
+.filter {
+    flex: 0 0 6%;
+    @include mixins.set-background-color(vars.$clr-dark-blue);
+    padding: 1.25rem;
+    height: 100vh;
+    @include mixins.set-border(3px, vars.$clr-ligth-green);
+    border-top: none;
+    justify-content: center;
+}
+
+.filter ul {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.filter ul li {
+    margin: 2rem 0;
+    //cursor: pointer;
+}
+
+#optionsContainer {
+    position: absolute;
+    //top: auto;
+    bottom: 65.55%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 0.5rem;
+    display: none; /* Inicialmente oculto */
+    min-width: 10rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+}
+
+#optionsContainer.show {
+    display: block; /* Mostrar cuando tiene la clase show */
+}

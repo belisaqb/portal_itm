@@ -1,3 +1,13 @@
-body{
-    margin: 0;
-}
+//abstracts
+@use "./abstracts/vars";
+@use "./abstracts/mixins";
+@use "./abstracts/media-queries";
+
+//layout
+@use "./layout/header";
+@use "./layout/sidebar";
+@use "./layout/content";
+
+//base
+@use "./base/typography";
+@use "./base/reset";

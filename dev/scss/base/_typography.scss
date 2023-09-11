@@ -1,0 +1,11 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+@use "../abstracts/media-queries";
+
+.regular-ligth-green{
+    @include mixins.set-font(vars.$fw-semibold, vars.$fs-med, vars.$clr-ligth-green);
+}
+
+.regular-ligth-green:hover{
+    @include mixins.set-font(vars.$fw-semibold, vars.$fs-med, vars.$clr-green);
+}

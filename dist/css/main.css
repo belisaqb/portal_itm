@@ -1,3 +1,135 @@
-body {
-  margin: 0;
+header {
+  background-color: rgb(0, 45, 92);
+  border: 3px solid rgb(60, 236, 200);
+}
+
+.search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25rem;
+  border-radius: 1.563rem 1.563rem 0 1.563rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar img {
+  width: 1.2rem;
+}
+
+.search-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.625rem;
+  font-size: 1rem;
+  background-color: rgb(60, 236, 200);
+}
+
+.search-button {
+  border: none;
+  background-color: rgb(44, 115, 155);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+}
+
+.notifications {
+  background-color: rgb(44, 115, 155);
+  padding: 1.7rem 2rem;
+}
+
+.notifications img {
+  width: 2rem;
+}
+
+.logo {
+  padding: 0rem 4rem;
+}
+
+.img-logo {
+  width: 4rem;
+}
+
+.img-user img {
+  width: 2rem;
+}
+
+.nav-buttons {
+  border: none;
+  background: none;
+}
+
+.filter {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 6%;
+          flex: 0 0 6%;
+  background-color: rgb(0, 45, 92);
+  padding: 1.25rem;
+  height: 100vh;
+  border: 3px solid rgb(60, 236, 200);
+  border-top: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filter ul {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.filter ul li {
+  margin: 2rem 0;
+}
+
+#optionsContainer {
+  position: absolute;
+  bottom: 65.55%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0.5rem;
+  display: none; /* Inicialmente oculto */
+  min-width: 10rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+}
+
+#optionsContainer.show {
+  display: block; /* Mostrar cuando tiene la clase show */
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1.25rem;
+  background-color: rgb(0, 55, 106);
+}
+
+.content-section {
+  background-color: rgb(0, 196, 151);
+}
+
+.regular-ligth-green {
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(60, 236, 200);
+}
+
+.regular-ligth-green:hover {
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(0, 167, 126);
 }

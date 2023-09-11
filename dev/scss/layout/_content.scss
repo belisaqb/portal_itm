@@ -1,0 +1,17 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+@use "../abstracts/media-queries";
+
+main {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    padding: 1.25rem;
+    @include mixins.set-background-color(vars.$clr-medium-blue);
+}
+
+.content-section {
+    @include mixins.set-background-color(vars.$clr-medium-green);
+}

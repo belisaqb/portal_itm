@@ -1,5 +1,64 @@
-//abstracts
 @use "../abstracts/vars";
 @use "../abstracts/mixins";
 @use "../abstracts/media-queries";
 
+header {
+    @include mixins.set-background-color(vars.$clr-dark-blue);
+    @include mixins.set-border(3px, vars.$clr-ligth-green);
+}
+
+.search-bar {
+    display: flex;
+    width: 25rem;
+    border-radius: 1.563rem 1.563rem 0 1.563rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar img {
+    width: 1.2rem
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.625rem;
+    font-size: 1rem;
+    @include mixins.set-background-color(vars.$clr-ligth-green);
+}
+
+.search-button {
+    border: none;
+    @include mixins.set-background-color(vars.$clr-medium-ski-blue);
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+}
+
+.notifications {
+    @include mixins.set-background-color(vars.$clr-medium-ski-blue);
+    padding: 1.7rem 2rem;
+}
+
+.notifications img {
+    width: 2rem;
+}
+
+.logo{
+    padding: 0rem 4rem;
+}
+
+.img-logo {
+    width: 4rem;
+}
+
+.img-user img {
+    width: 2rem;
+}
+
+.nav-buttons {
+    border: none;
+    background: none;
+}

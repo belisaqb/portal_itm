@@ -6,10 +6,12 @@
     
 }
 
+//set background color
 @mixin set-background-color($clr){
     background-color: $clr;
 }
 
+//set border solid
 @mixin set-border($width ,$clr){
     border: $width solid $clr;
 }
