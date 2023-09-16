@@ -47,8 +47,12 @@
     cursor: pointer;
     font-family: 'Lato', sans-serif; 
     font-weight: 700; 
-    color: #00C497;
+    color: white;
     background: #00376A;
+}
+
+.register-button:hover {
+  color: #00C497;
 }
 
 .login-button {
@@ -59,6 +63,10 @@
   font-weight: 700; 
   color: #00376A;
   background: none;
+}
+
+.login-button:hover{
+  color: white;
 }
 
 .line-between-buttons {
@@ -83,7 +91,7 @@
 }
 
 .registration-modal h2 {
-  color: #00C497;
+  color: white;
   font-family: 'Lato', sans-serif; 
   font-weight: 700; 
   text-align: center; 
@@ -92,7 +100,8 @@
 
 .registration-modal label {
   font-family: 'Lato', sans-serif; 
-  font-weight: 700;  
+  font-weight: 700; 
+  color: #00376A; 
 }
 
 .form-display{
