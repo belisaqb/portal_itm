@@ -2,93 +2,47 @@
 @use "../abstracts/mixins";
 @use "../abstracts/media-queries";
 
-/* filter Container */
-/*
-.filter {
-    flex: 0 0 6%;
-    @include mixins.set-background-color(vars.$clr-dark-blue);
-    padding: 1.25rem;
-    height: 100vh;
-    @include mixins.set-border(3px, vars.$clr-ligth-green);
-    border-top: none;
-    justify-content: center;
-    position: relative;
-}
-
-.filter ul {
-    list-style: none;
-    padding: 0.5rem;
-}
-
-.filter ul li {
-    margin: 2rem 0;
-    padding-top: 1.30rem;
-}
-*/
-
-
-
 /* Animations */
-/*
+
 @keyframes slideIn {
     from {
-        
+
         transform: translatex(-100%);
     }
+
     to {
-        
+
         transform: translatex(0);
     }
 }
 
 @keyframes slideOut {
     from {
-        
+
         transform: translateX(0);
     }
+
     to {
-        
+
         transform: translateX(-100%);
     }
 }
-/*
-
-/* options container */
-/*
-#optionsContainer {
-    position: absolute;
-    @include mixins.set-background-color(vars.$clr-dark-blue);
-    @include mixins.set-border(3px, vars.$clr-ligth-green);
-    padding: 0.5rem;
-    display: none; 
-    min-width: 10rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-    border-left: none;
-    
-}
-
-#optionsContainer.show {
-    animation: slideIn 0.5s ease forwards;
-}
-
-#optionsContainer.hide {
-    animation: slideOut 0.5s ease forwards; 
-}
-*/
 
 .floating-filter {
     position: fixed;
-    width: 6%; /* Ancho del botón */
+    width: 5.5rem;
+    height: 85.7vh;
     @include mixins.set-border(3px, vars.$clr-ligth-green);
     @include mixins.set-background-color(vars.$clr-dark-blue);
     border-top: none;
-    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+    cursor: pointer;
     padding: 2rem 0;
     margin-top: 6.6rem;
 }
 
-.floating-filter button{
+.floating-filter button {
     margin-left: 1.8rem;
+    margin-top: 2em;
 }
 
 .floating-filter ul {
@@ -97,11 +51,37 @@
 }
 
 .floating-filter ul li {
-    //margin: 2rem 0;
-    padding-top: 3.5rem;
+    padding-top: 5.5rem;
 }
 
-.img-filter{
+.img-filter {
     width: 2rem;
+}
+
+/* options container */
+
+#optionsContainer {
+    @include mixins.set-background-color(vars.$clr-dark-blue);
+    @include mixins.set-border(3px, vars.$clr-ligth-green);
+    position: fixed;
+    top: 0;
+    margin-top: 6.6rem;
+    min-width: 10rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+    border-top: none;
+    height: 85.7vh;
+}
+
+.padding-options {
+    padding-top: 3.75rem;
+    padding-left: 0.3rem;
+}
+
+#optionsContainer.show {
+    animation: slideIn 0.5s ease forwards;
+}
+
+#optionsContainer.hide {
+    animation: slideOut 0.5s ease forwards;
 }
 
