@@ -2,10 +2,31 @@
 @use "../abstracts/mixins";
 @use "../abstracts/media-queries";
 
-.regular-ligth-green{
+.semibold-ligth-green-med{
     @include mixins.set-font(vars.$fw-semibold, vars.$fs-med, vars.$clr-ligth-green);
 }
 
-.regular-ligth-green:hover{
+.semibold-ligth-green-med:hover{
     @include mixins.set-font(vars.$fw-semibold, vars.$fs-med, vars.$clr-green);
 }
+
+.regular-ligth-green-med{
+    @include mixins.set-font(vars.$fw-regular, vars.$fs-med, vars.$clr-green);
+}
+
+.black-ligth-green-lg{
+    @include mixins.set-font(vars.$fw-black, vars.$fs-lg, vars.$clr-green);
+}
+
+.black-dark-blue-xlg{
+    @include mixins.set-font(vars.$fw-black, vars.$fs-xlg, vars.$clr-dark-blue);
+}
+
+.bold-dark-blue-lg{
+    @include mixins.set-font(vars.$fw-bold, vars.$fs-lg, vars.$clr-dark-blue);
+}
+
+.bold-white-lg{
+    @include mixins.set-font(vars.$fw-bold, vars.$fs-lg, vars.$clr-white);
+}
+

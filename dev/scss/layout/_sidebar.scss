@@ -2,6 +2,8 @@
 @use "../abstracts/mixins";
 @use "../abstracts/media-queries";
 
+/* filter Container */
+/*
 .filter {
     flex: 0 0 6%;
     @include mixins.set-background-color(vars.$clr-dark-blue);
@@ -10,6 +12,7 @@
     @include mixins.set-border(3px, vars.$clr-ligth-green);
     border-top: none;
     justify-content: center;
+    position: relative;
 }
 
 .filter ul {
@@ -19,22 +22,86 @@
 
 .filter ul li {
     margin: 2rem 0;
-    //cursor: pointer;
+    padding-top: 1.30rem;
+}
+*/
+
+
+
+/* Animations */
+/*
+@keyframes slideIn {
+    from {
+        
+        transform: translatex(-100%);
+    }
+    to {
+        
+        transform: translatex(0);
+    }
 }
 
+@keyframes slideOut {
+    from {
+        
+        transform: translateX(0);
+    }
+    to {
+        
+        transform: translateX(-100%);
+    }
+}
+/*
+
+/* options container */
+/*
 #optionsContainer {
     position: absolute;
-    //top: auto;
-    bottom: 65.55%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    @include mixins.set-background-color(vars.$clr-dark-blue);
+    @include mixins.set-border(3px, vars.$clr-ligth-green);
     padding: 0.5rem;
-    display: none; /* Inicialmente oculto */
+    display: none; 
     min-width: 10rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+    border-left: none;
+    
 }
 
 #optionsContainer.show {
-    display: block; /* Mostrar cuando tiene la clase show */
+    animation: slideIn 0.5s ease forwards;
 }
+
+#optionsContainer.hide {
+    animation: slideOut 0.5s ease forwards; 
+}
+*/
+
+.floating-filter {
+    position: fixed;
+    width: 6%; /* Ancho del botón */
+    @include mixins.set-border(3px, vars.$clr-ligth-green);
+    @include mixins.set-background-color(vars.$clr-dark-blue);
+    border-top: none;
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+    padding: 2rem 0;
+    margin-top: 6.6rem;
+}
+
+.floating-filter button{
+    margin-left: 1.8rem;
+}
+
+.floating-filter ul {
+    list-style: none;
+    margin-left: -5px;
+}
+
+.floating-filter ul li {
+    //margin: 2rem 0;
+    padding-top: 3.5rem;
+}
+
+.img-filter{
+    width: 2rem;
+}
+

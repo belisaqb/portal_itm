@@ -2,17 +2,22 @@
 @use "../abstracts/mixins";
 @use "../abstracts/media-queries";
 
-header {
+.header {
     @include mixins.set-background-color(vars.$clr-dark-blue);
-    @include mixins.set-border(3px, vars.$clr-ligth-green);
+    @include mixins.set-border(2px, vars.$clr-ligth-green);
+    position: fixed;
+    width: 100%;
+    z-index: 1000; 
 }
 
+/* search bar*/
 .search-bar {
     display: flex;
     width: 25rem;
     border-radius: 1.563rem 1.563rem 0 1.563rem;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 1.5rem;
 }
 
 .search-bar img {
@@ -37,28 +42,40 @@ header {
     cursor: pointer;
 }
 
-.notifications {
-    @include mixins.set-background-color(vars.$clr-medium-ski-blue);
-    padding: 1.7rem 2rem;
-}
-
+/* Notifications */
 .notifications img {
     width: 2rem;
 }
 
+/* Logo */
 .logo{
-    padding: 0rem 4rem;
+    //padding: 0 0 0 1.5rem;
+    margin: 1rem 0;
 }
 
 .img-logo {
     width: 4rem;
 }
 
+/* img user */
 .img-user img {
     width: 2rem;
+    margin-right: 1.5rem;
 }
 
+/* Style elements */
 .nav-buttons {
     border: none;
     background: none;
 }
+
+/* Se usa las etiquetas a del navbar */
+.link-nav {
+    text-decoration: none; 
+    margin: 0rem 2rem 0 0rem;
+}
+
+
+
+
+

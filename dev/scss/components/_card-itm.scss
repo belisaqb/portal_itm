@@ -1,0 +1,16 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+@use "../abstracts/media-queries";
+
+.card-img-top {
+    max-height: 20rem; 
+    object-fit: cover; /* Esto asegura que la imagen cubra el espacio y no se deforme */
+    border-radius: 0;
+    @include mixins.set-border(4px, vars.$clr-dark-blue)
+}
+
+.card-content{
+    background: none;
+    border-radius: 0;
+    border: none;
+}
