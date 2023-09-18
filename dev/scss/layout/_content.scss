@@ -8,10 +8,32 @@ main {
 
 .content {
     flex: 1;
-    padding: 1.25rem;
+    padding: 2rem 7rem 2rem 7rem;
+    margin-top: 6.6rem;
     @include mixins.set-background-color(vars.$clr-medium-blue);
+    //responsive
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        padding: 2rem 3rem;
+    }
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        padding: 2rem 3rem; 
+    }
+    @include media-queries.respond-to(media-queries.$phone){
+        padding: 1.5rem; 
+    }
 }
 
 .content-section {
     @include mixins.set-background-color(vars.$clr-medium-green);
+}
+
+/* dropdown button */
+.dropdown-button{
+    @include mixins.set-background-color(vars.$clr-dark-blue);
+    border: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.positionY{
+   transform: translateY(-90%);
 }
