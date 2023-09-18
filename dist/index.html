@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- typography link -->
+    <link rel="stylesheet" href="https://use.typekit.net/tgm3int.css">
+    <!-- typography link -->
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/register.css">
+
+    <title>Proyectos</title>
+</head>
+
+<body>
+    <section id="app">
+        <header>
+            <nav style="padding: 0;" class="navbar navbar-expand-lg">
+                <div style="padding: 0;" class="container-fluid">
+                    <a class="navbar-brand logo" href="#"><img class="img-logo" src="svg/ITM.svg" alt="itm"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div style="justify-content: space-between;" class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul style="width: 40%; justify-content: space-around;" class="navbar-nav mb-2 mb-lg-0"> <!-- me-auto -->
+                            <li class="nav-item">
+                                <a class="nav-link regular-ligth-green" aria-current="page" href="#">PROYECTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link regular-ligth-green" href="#">FOROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link regular-ligth-green" href="#">NOVEDADES</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex search-bar" role="search">
+                            <input type="search" class="search-input" placeholder="Buscar">
+                            <button class="search-button"><img src="svg/search2.svg" alt="search"></button>
+                        </form>
+                        <div class="img-user">
+                            <button class="nav-buttons"> <img src="svg/user.svg" alt="user"></button>
+                        </div>
+                        <div class="notifications">
+                            <button class="nav-buttons"> <img src="svg/campaing.svg" alt="user"></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <aside class="filter">
+                <ul>
+                    <li>
+                        <button id="toggleButton" class="nav-buttons btn-link"><img style="width: 1rem;" src="svg/open.svg" alt="open"></button>
+                    </li>
+                    <li>
+                        <img style="width: 2rem;" src="svg/code.svg" alt="code">
+                    </li>
+                    <li>
+                        <img style="width: 2rem;" src="svg/drawings.svg" alt="drawings">
+                    </li>
+                    <li>
+                        <img style="width: 2rem;" src="svg/cyber-segurity.svg" alt="cyber-segurity">
+                    </li>
+                    <li>
+                        <img style="width: 2rem;" src="svg/animations.svg" alt="animations">
+                    </li>
+                </ul>
+                <div id="optionsContainer" style="display: none;">
+                    <!-- opciones desplegables -->
+                    <p>Opción 1</p>
+                    <p>Opción 2</p>
+                </div>
+            </aside>
+            <section class="content">
+                <div class="content-section">
+                    <h1>Hola Mundo Principal</h1>
+                    <p>Hola Mundo es el contenido principal de la página.</p>
+            </section>
+            </div>
+        </main>
+    </section>
+
+    <!-- Register section -->
+    <div id="registration-popup" class="registration-popup">
+        <div class="registration-modal">
+            <span class="close-popup-button">&times;</span>
+                <h2>REGISTRARSE</h2>
+                <form class="form-display">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" id="nombre" class="input-field" placeholder="nombre" required>
+        
+                    <label for="apellidos">APELLIDOS</label>
+                    <input type="text" id="apellidos" class="input-field" placeholder="apellidos" required>
+        
+                    <label for="carnet">CARNET</label>
+                    <input type="text" id="carnet" class="input-field" placeholder="carnet" required>
+        
+                    <label for="correo">CORREO ELECTRONICO</label>
+                    <input type="email" id="correo" class="input-field" placeholder="correo electrónico" required>
+        
+                    <label for="contraseña">CONTRASEÑA</label>
+                    <input type="password" id="contraseña" class="input-field" placeholder="contraseña" required>
+        
+                    <label for="verificar-contraseña">VERIFICAR CONTRASEÑA</label>
+                    <input type="password" id="verificar-contraseña" class="input-field" placeholder="verificar contraseña" required>
+        
+                    <div class="button-container">
+                        <button type="button" class="register-button">REGISTRAR</button>
+                        <hr class="line-between-buttons">
+                        <button type="button" class="login-button">INICIAR SESION</button>
+                    </div>   
+                </form>
+            </div>
+    </div>
+    <!-- Register section -->
+
+    <!-- Custom events - components -->
+    <script src="https://unpkg.com/mitt/dist/mitt.umd.js"></script>
+    <!-- VueJS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/register.js"></script>
+    
+    <!-- Mounted Vue -->
+    <script>
+        const mountedApp = app.mount("#app");
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!--
+                <nav>
+                <div class="logo">
+                    <img class="img-logo" src="svg/ITM.svg" alt="itm">
+                </div>
+                <div class="navigation">
+                    <a href="#">PROYECTOS</a>
+                    <a href="#">FOROS</a>
+                    <a href="#">NOVEDADES</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="">
+                    <button class="search-button"><img src="svg/search2.svg" alt="search"></button>
+                </div>
+                <div class="img-user">
+                    <button class="nav-buttons"> <img src="svg/user.svg" alt="user"></button>
+                </div>
+                <div class="notifications">
+                    <button class="nav-buttons"> <img src="svg/campaing.svg" alt="user"></button>
+                </div>
+            </nav>
+-->
