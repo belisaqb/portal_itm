@@ -28,5 +28,9 @@
 
 .bold-white-lg{
     @include mixins.set-font(vars.$fw-bold, vars.$fs-lg, vars.$clr-white);
+    background-color: rgba(0, 0, 0, 0.250);
+    padding: 0 0.5rem;
 }
+
+
 

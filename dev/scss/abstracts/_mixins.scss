@@ -15,3 +15,8 @@
 @mixin set-border($width ,$clr){
     border: $width solid $clr;
 }
+
+//set box-shadow
+@mixin set-box-shadow($h, $v, $blur, $spread, $clr){
+    box-shadow: $h $v $blur $spread, $clr ;
+}

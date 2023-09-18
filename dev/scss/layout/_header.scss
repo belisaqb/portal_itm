@@ -31,6 +31,7 @@
     padding: 0.625rem;
     font-size: 1rem;
     @include mixins.set-background-color(vars.$clr-ligth-green);
+    
 }
 
 .search-button {
@@ -75,7 +76,29 @@
     margin: 0rem 2rem 0 0rem;
 }
 
+/* hamburguer button */
 
+.btn-hamburguer{
+    @include mixins.set-border(2px, vars.$clr-green);
+    background: none;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
 
+.btn-hamburguer:focus{
+    box-shadow: 0 0 0 2px rgba(0, 167, 126, 1);;
+}
 
+.btn-hamburguer img{
+    width: 2rem;
+}
 
+@media (max-width: 991px) {
+    .search-bar {
+        display: none;
+    }
+
+    #searchContainer {
+        display: flex;
+    }
+}
