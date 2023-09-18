@@ -300,12 +300,35 @@
                 <div class="button-container">
                     <button type="button" class="register-button">REGISTRAR</button>
                     <hr class="line-between-buttons">
-                    <button type="button" class="login-button">INICIAR SESION</button>
+                    <button id="login-button" type="button" class="login-button">INICIAR SESION</button>
                 </div>
             </form>
         </div>
     </div>
     <!-- Register section -->
+
+    <!-- Login section -->
+    <div id="login-popup" class="registration-popup">
+        <div class="registration-modal">
+            <span id="close-login-popup" class="close-popup-button">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form class="form-display">
+                   
+                <label for="correo">CORREO ELECTRONICO</label>
+                <input type="email" id="correo" class="input-field" placeholder="correo electrónico" required>
+    
+                <label for="contraseña">CONTRASEÑA</label>
+                <input type="password" id="contraseña" class="input-field" placeholder="contraseña" required>
+    
+                <div class="button-container">
+                    <button type="button" class="register-button">INICIAR SESION</button>                    
+                    <hr class="line-between-buttons">
+                    <button id="register-button" type="button" class="login-button">REGISTRAR</button>                    
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Login section -->
 
     <!-- Custom events - components -->
     <script src="https://unpkg.com/mitt/dist/mitt.umd.js"></script>
@@ -315,6 +338,7 @@
     <script src="js/main.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/register.js"></script>
+    <script src="js/login.js"></script>
     <!-- Mounted Vue -->
     <script>
         const mountedApp = app.mount("#app");
