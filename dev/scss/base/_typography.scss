@@ -30,7 +30,17 @@
     @include mixins.set-font(vars.$fw-bold, vars.$fs-lg, vars.$clr-white);
     background-color: rgba(0, 0, 0, 0.250);
     padding: 0 0.5rem;
+    @include media-queries.respond-to(media-queries.$tablet-portrait){
+        @include mixins.set-font(vars.$fw-bold, vars.$fs-xm, vars.$clr-white);
+    }
+    @include media-queries.respond-to(media-queries.$tablet-landscape){
+        @include mixins.set-font(vars.$fw-bold, vars.$fs-xm, vars.$clr-white);
+    }
+    @include media-queries.respond-to(media-queries.$phone){
+        @include mixins.set-font(vars.$fw-bold, vars.$fs-xm, vars.$clr-white);
+    }
 }
+
 
 
 

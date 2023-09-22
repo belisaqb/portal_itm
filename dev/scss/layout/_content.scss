@@ -20,6 +20,7 @@ main {
     }
     @include media-queries.respond-to(media-queries.$phone){
         padding: 1.5rem; 
+        margin-top: 4.8rem;
     }
 }
 
@@ -36,4 +37,14 @@ main {
 
 .positionY{
    transform: translateY(-90%);
+}
+
+.dropdown-menu{
+    @include mixins.set-background-color(vars.$clr-dark-blue);
+    
+}
+
+.dropdown-menu :hover{
+    @include mixins.set-background-color(vars.$clr-dark-blue);
+    
 }

@@ -1,3 +1,4 @@
+/* Sidebar */
 document.addEventListener('DOMContentLoaded', function() {
     const floatingFilter = document.getElementById('filter');
     const optionsContainer = document.getElementById('optionsContainer');
@@ -34,8 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500); // 500ms es la duración de la animación
         isOpen = false;
     });
-
 });
+/* Sidebar */
+
 
 
 
