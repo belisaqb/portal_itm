@@ -30,7 +30,7 @@
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin: 0 2.5rem;
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (min-width: 768px) and (max-width: 993px) {
   .search-bar {
     width: 50%;
   }
@@ -156,6 +156,10 @@
     margin-right: 2.45rem;
     margin-bottom: 0.45rem;
   }
+  .btn-hamburguer {
+    /* Establece un ancho de 0 y un margen derecho de 0 para cerrar el botón */
+    overflow: hidden;
+  }
   .navbar-nav .nav-item {
     margin: 0.5rem 0; /* Espaciado entre elementos */
   }
@@ -219,7 +223,7 @@
   z-index: 1;
   /* Responsive */
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (min-width: 768px) and (max-width: 993px) {
   .floating-filter {
     height: 5.8rem;
   }
@@ -255,7 +259,7 @@
     margin-top: 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (min-width: 768px) and (max-width: 993px) {
   .floating-filter button {
     margin-top: 0;
   }
@@ -338,7 +342,7 @@
     display: inline-block;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (min-width: 768px) and (max-width: 993px) {
   /* Oculta la lista cuando es responsive */
   #filter ul {
     display: none;
@@ -362,7 +366,7 @@ main {
   margin-top: 6.6rem;
   background-color: rgb(0, 55, 106);
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (min-width: 768px) and (max-width: 993px) {
   .content {
     padding: 2rem 3rem;
   }
@@ -391,8 +395,7 @@ main {
 }
 
 .positionY {
-  -webkit-transform: translateY(-90%);
-          transform: translateY(-90%);
+  margin-top: 17.5rem;
 }
 
 .dropdown-menu {
@@ -403,12 +406,27 @@ main {
   background-color: rgb(0, 45, 92);
 }
 
+.card-container {
+  position: relative;
+  overflow: hidden;
+  border: 4px solid rgb(0, 45, 92);
+}
+
 .card-img-top {
-  max-height: 20rem;
+  height: 20rem;
   -o-object-fit: cover;
      object-fit: cover; /* Esto asegura que la imagen cubra el espacio y no se deforme */
   border-radius: 0;
-  border: 4px solid rgb(0, 45, 92);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0)), to(rgb(0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)); /* Ajusta la opacidad y el color del degradado según tus preferencias */
 }
 
 .card-content {
@@ -457,7 +475,6 @@ main {
   font-weight: 700;
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.25);
   padding: 0 0.5rem;
 }
 @media only screen and (max-width: 767px) {
@@ -467,7 +484,7 @@ main {
     color: rgb(255, 255, 255);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (min-width: 768px) and (max-width: 993px) {
   .bold-white-lg {
     font-weight: 700;
     font-size: 1.2rem;

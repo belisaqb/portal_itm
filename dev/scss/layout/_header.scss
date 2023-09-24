@@ -145,6 +145,11 @@
         margin-right: 2.45rem;
         margin-bottom: 0.45rem;
     }
+
+    .btn-hamburguer {
+        /* Establece un ancho de 0 y un margen derecho de 0 para cerrar el botón */
+        overflow: hidden;
+    }
   
     .navbar-nav .nav-item {
       margin: 0.5rem 0; /* Espaciado entre elementos */
