@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.appendChild(optionsContainer);
             isOpen = true;
         } else {
-            optionsContainer.classList.remove('show');
-            optionsContainer.classList.add('hide');
+            //optionsContainer.classList.remove('show');
+            //optionsContainer.classList.add('hide');
             setTimeout(() => {
                 optionsContainer.style.display = 'none';
             }, 500); // 500ms es la duración de la animación

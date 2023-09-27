@@ -56,6 +56,7 @@
 .floating-filter button {
     margin-left: 1.8rem;
     margin-top: 2em;
+    
     /* Responsive */
     @include media-queries.respond-to(media-queries.$phone) {
         margin-top: 0;
@@ -102,6 +103,9 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
     border-top: none;
     padding-bottom: 2.1rem;
+
+    transition: top 0.3s ease;
+
     @include media-queries.respond-to(media-queries.$phone) {
         margin-top: 4.8rem;
     }
@@ -110,6 +114,9 @@
 .padding-options {
     padding-top: 3rem;
     padding-left: 0.3rem;
+    @include media-queries.respond-to(media-queries.$phone){
+        padding-top: 1.5rem;
+    }
 }
 
 #optionsContainer.show {
@@ -156,4 +163,13 @@
     #filter .toggle-button {
         display: inline-block;
     }
+}
+
+
+.floating-filter {
+    transition: top 0.3s ease;
+}
+
+.animate-down {
+    top: 170px !important; /* Ajusta la posición debajo de las opciones */
 }
